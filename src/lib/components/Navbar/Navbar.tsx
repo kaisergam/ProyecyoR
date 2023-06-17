@@ -23,7 +23,6 @@ import { useState, useEffect } from 'react';
 import { FaInstagram, FaSpotify } from 'react-icons/fa';
 
 import ModalInfo from '../ModalInfo/ModalInfo';
-import mock from 'mock.json';
 
 const primaryButtonStyles = {
   variant: 'ghost',
@@ -39,13 +38,36 @@ const secondaryButtonStyles = {
   marginRight: '8px',
   transition: 'background-color 0.3s ease',
 };
-
+const number = {
+  number: 'https://wa.me/5491136347996',
+};
+const phoneNumbers = [
+  {
+    name: 'Para empresas',
+    link: number.number,
+  },
+  {
+    name: 'Para artistas',
+    link: number.number,
+  },
+  {
+    name: 'Para mi publico <3',
+    link: number.number,
+  },
+];
 const InstaLink = 'https://www.instagram.com/rhanela.cf/';
 const SpotyLink = 'https://open.spotify.com/artist/1o77UQxjJ52CB2oEIjNc3O';
 
 const Navbar = () => {
   const [selectedItemId, setSelectedItemId] = useState<number | null>(null);
   const [isMobileView, setIsMobileView] = useState(false);
+
+  const getWhatsappDropdownPosition = () => {
+    if (isMobileView) {
+      return { right: '-70px', left: 'auto' };
+    }
+    return { right: '-80px', left: 'auto' };
+  };
 
   const {
     isOpen: isOpenModal3,
@@ -63,9 +85,6 @@ const Navbar = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-  const handleProductClick = (itemId: number) => {
-    setSelectedItemId(itemId);
-  };
   return (
     <>
       <Flex
@@ -146,38 +165,29 @@ const Navbar = () => {
               </PopoverTrigger>
               <PopoverContent
                 bg="white"
-                width="100%"
-                transform="translateX(-7.5%) scale(0.95)"
+                maxWidth="55%"
+                {...getWhatsappDropdownPosition()}
               >
                 <PopoverArrow />
                 <PopoverCloseButton />
                 <PopoverBody>
-                  <Box
-                    zIndex="10"
-                    sx={{
-                      display: 'flex',
-                      flexDirection: 'column',
-                      alignItems: 'center',
-                    }}
-                  >
-                    {mock.map((item) => (
-                      <Box
-                        key={item.id}
-                        as="button"
-                        p="2"
-                        color="gray.800"
-                        textAlign="center"
-                        fontSize="1rem"
-                        _hover={{ backgroundColor: 'gray.100' }}
-                        display="block"
-                        marginBottom="2"
-                        onClick={() => handleProductClick(item.id)}
-                        width="100%"
-                      >
-                        {item.segmento}
-                      </Box>
-                    ))}
-                  </Box>
+                  {phoneNumbers.map((phone) => (
+                    <Box
+                      key={phone.name}
+                      as="a"
+                      href={phone.link}
+                      display="block"
+                      p="2"
+                      color="gray.800"
+                      textAlign="center"
+                      fontSize="1rem"
+                      _hover={{ backgroundColor: 'gray.100' }}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {phone.name}
+                    </Box>
+                  ))}
                 </PopoverBody>
               </PopoverContent>
             </Popover>
