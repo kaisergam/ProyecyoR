@@ -1,4 +1,4 @@
-import { Button, useMediaQuery } from '@chakra-ui/react';
+import { useMediaQuery } from '@chakra-ui/react';
 import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -26,12 +26,12 @@ const Slider = () => {
     setCurrentSlide(index);
   };
 
-  const handleButtonClick = () => {};
+  // const handleButtonClick = () => {};
 
   const [isMobile] = useMediaQuery('(max-width: 1005px)');
 
   return (
-    <div style={{ maxHeight: '500px', maxWidth: 'auto', position: 'relative' }}>
+    <div style={{ position: 'relative' }}>
       <Carousel
         showThumbs={false}
         showArrows={!isMobile}
@@ -46,8 +46,6 @@ const Slider = () => {
           <div key={image.toString()}>
             <Image
               src={image.images}
-              width={100}
-              height={100}
               alt={image.images.toString()}
               unoptimized
             />
@@ -55,7 +53,7 @@ const Slider = () => {
         ))}
       </Carousel>
 
-      {isMobile && (
+      {/* {isMobile && (
         <Button
           colorScheme="blue"
           mr={3}
@@ -69,7 +67,7 @@ const Slider = () => {
         >
           Ir a Formulario
         </Button>
-      )}
+      )} */}
     </div>
   );
 };
