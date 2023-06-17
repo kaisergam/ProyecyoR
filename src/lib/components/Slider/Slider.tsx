@@ -5,10 +5,10 @@ import { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import image1 from '../../../assets/images/img1.png';
-import image2 from '../../../assets/images/img2.png';
-import image3 from '../../../assets/images/img3.png';
-import image4 from '../../../assets/images/img4.png';
+import image1 from '../../../assets/images/1x.jpg';
+import image2 from '../../../assets/images/2x.jpg';
+import image3 from '../../../assets/images/3x.jpg';
+// import image4 from '../../../assets/images/4.jpg';
 
 interface ImagesCarrousel {
   images: string | StaticImageData;
@@ -17,7 +17,7 @@ const images: ImagesCarrousel[] = [
   { images: image1 },
   { images: image2 },
   { images: image3 },
-  { images: image4 },
+  // { images: image4 },
 ];
 
 const Slider = () => {
@@ -31,7 +31,7 @@ const Slider = () => {
   const [isMobile] = useMediaQuery('(max-width: 1005px)');
 
   return (
-    <div style={{ maxWidth: '100%', position: 'relative' }}>
+    <div style={{ maxHeight: '500px', maxWidth: 'auto', position: 'relative' }}>
       <Carousel
         showThumbs={false}
         showArrows={!isMobile}

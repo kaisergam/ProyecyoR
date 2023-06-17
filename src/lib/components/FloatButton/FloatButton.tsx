@@ -3,7 +3,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 const FloatingButton = () => {
   return (
-    <Link href="https://wa.me/5491151332160" isExternal>
+    <Link href="https://wa.me/5491136347996" isExternal>
       <IconButton
         position="fixed"
         bottom="20px"

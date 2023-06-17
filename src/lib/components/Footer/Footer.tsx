@@ -43,7 +43,6 @@ const Footer = () => {
   return (
     <Stack spacing={0} bg="#1b1a1b">
       <Box py={20} justifyContent="space-between">
-        {/* Cambiar por el logo cuando esté hecho */}
         <Text textAlign="center" color="white">
           <Box
             fontSize="2xl"

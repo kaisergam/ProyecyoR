@@ -1,8 +1,8 @@
 /** @type {import('next-seo').DefaultSeoProps} */
 const defaultSEOConfig = {
-  title: "Almocred",
-  titleTemplate: "%s | Almocred",
-  defaultTitle: "Almocred",
+  title: 'Rhanela',
+  titleTemplate: '%s | Rhanela',
+  defaultTitle: 'Rhanela',
 };
 
 export default defaultSEOConfig;
