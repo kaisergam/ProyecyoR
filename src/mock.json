@@ -1,0 +1,120 @@
+[
+  {
+    "id": 1,
+    "segmento": "Fuerzas Armadas Argentinas",
+    "cobro": [
+      "Descuento de Haberes, Decreto 14/2012.",
+      "Débito Directo CBU, Pre Aprobacion Inmediata al Completar el Formulario."
+    ],
+    "asistencia": [
+      "Monto Máximo Sin Límite, Conforme a Disponible de Certificado de Haberes.",
+      "Plazo Máximo 72 Meses."
+    ],
+    "requisitos": ["DNI", "Último Recibo de Haberes", "Certificado de Haberes"],
+    "organismos": [
+      "Armada Argentina",
+      "Ejército Argentino",
+      "Fuerza Aérea Argentina"
+    ],
+    "monto": ["Sin límite", "Por Decreto 1412, Hasta 72 Meses"]
+  },
+  {
+    "id": 2,
+    "segmento": "Fuerzas de Seguridad Nacional",
+    "cobro": [
+      "Descuento de Haberes, Decreto 14/2012.",
+      "Débito Directo CBU, Pre Aprobacion Inmediata al Completar el Formulario."
+    ],
+    "asistencia": [
+      "Monto Máximo Sin Límite, Conforme a Disponible de Certificado de Haberes.",
+      "Plazo Máximo 72 Meses."
+    ],
+    "requisitos": ["DNI", "Último Recibo de Haberes", "Certificado de Haberes"],
+    "organismos": [
+      "Gendarmería Nacional Argentina",
+      "Prefectura Naval Argentina",
+      "Policía Federal Argentina",
+      "Policía de Seguridad Aeroportuaria",
+      "Servicio Penitenciario Federal"
+    ],
+    "monto": ["Sin límite", "Por Decreto 1412, Hasta 72 Meses"]
+  },
+  {
+    "id": 3,
+    "segmento": "Retirados - FF. SS.",
+    "cobro": [
+      "Descuento de Haberes",
+      "Débito Directo CBU, Pre Aprobacion Inmediata al Completar el Formulario."
+    ],
+    "asistencia": ["Hasta $750.000.", "48 Meses."],
+    "requisitos": [
+      "DNI",
+      "Último Recibo de Haberes",
+      "Autorización de Descuentos"
+    ],
+    "organismos": [
+      "Retirados de Policia Federal Argentina",
+      "Retirados de Servicio Penitenciario Federal",
+      "Retirados de Gendarmeria Nacional",
+      "Retirados de Prefectura Naval Argentina"
+    ],
+    "monto": ["Hasta $750.000", "Por Descuento H, Hasta 48 Meses"]
+  },
+  {
+    "id": 4,
+    "segmento": "Jubilados",
+    "cobro": [
+      "Descuento de Haberes(Pausada)",
+      "Débito Directo CBU, Pre Aprobacion Inmediata al Completar el Formulario."
+    ],
+    "asistencia": [
+      "Desde $10.000, Hasta $60.000",
+      "Desde 12 Meses, Hasta 36 Meses."
+    ],
+    "requisitos": [
+      "DNI",
+      "Último Recibo de Haberes",
+      "Comprobante de Servicios"
+    ],
+    "organismos": [
+      "Jubilados y Pensionados Nacionales",
+      "Jubilados y Pensionados Provinciales"
+    ],
+    "monto": ["Hasta $60.000", "Por Debito Directo, Hasta 36 Meses"]
+  },
+  {
+    "id": 5,
+    "segmento": "Aerolíneas Argentinas",
+    "cobro": ["Descuento de Haberes"],
+    "asistencia": ["Hasta $1.500.000.", "36 Meses."],
+    "requisitos": [
+      "DNI",
+      "Último Recibo de Haberes",
+      "Autorización de Descuentos"
+    ],
+    "organismos": ["Aerolíneas Argentinas"],
+    "monto": ["Hasta $1.500.000", "Por Descuento H,Hasta 36 Meses"]
+  },
+  {
+    "id": 6,
+    "segmento": "Administracion Pública Nacional",
+    "cobro": [
+      "Descuento de Haberes, Decreto 14/2012.",
+      "Débito Directo CBU, Pre Aprobacion Inmediata al Completar el Formulario."
+    ],
+    "asistencia": [
+      "Monto Máximo Sin Límite,Conforme a Disponible de Certificado de Haberes.",
+      "Plazo Máximo 72 Meses."
+    ],
+    "requisitos": ["DNI", "Último Recibo de Haberes", "Certificado de Haberes"],
+    "organismos": [
+      "AFIP / ANAC / ANMAT / ANSES",
+      "CNA / CONICET / EANA / ENACOM",
+      "INTA / INTI / SENASA",
+      "Ministerios Nacionales",
+      "Vialidad Nacional",
+      "Universidad de Tucumán"
+    ],
+    "monto": ["Sin Límite", "Por Decreto 1412, Hasta 72 Meses"]
+  }
+]
