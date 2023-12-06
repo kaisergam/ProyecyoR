@@ -39,7 +39,7 @@ const secondaryButtonStyles = {
   transition: 'background-color 0.3s ease',
 };
 const number = {
-  number: 'https://wa.me/5491136347996',
+  number: 'https://wa.me/5491136347997',
 };
 const phoneNumbers = [
   {
@@ -237,48 +237,6 @@ const Navbar = () => {
           >
             <FaInstagram />
           </Button>
-          {/* <Popover>
-            <PopoverTrigger>
-              <Button
-                {...secondaryButtonStyles}
-                fontSize="2.0rem"
-                color="white"
-                _hover={{
-                  backgroundColor: 'whatsapp.500',
-                  color: 'white',
-                }}
-              >
-                <FaWhatsapp />
-              </Button>
-            </PopoverTrigger>
-            <PopoverContent
-              bg="white"
-              maxWidth="55%"
-              {...getWhatsappDropdownPosition()}
-            >
-              <PopoverArrow />
-              <PopoverCloseButton />
-              <PopoverBody>
-                {phoneNumbers.map((phone) => (
-                  <Box
-                    key={phone.name}
-                    as="a"
-                    href={phone.link}
-                    display="block"
-                    p="2"
-                    color="gray.800"
-                    textAlign="center"
-                    fontSize="1rem"
-                    _hover={{ backgroundColor: 'gray.100' }}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {phone.name}
-                  </Box>
-                ))}
-              </PopoverBody>
-            </PopoverContent>
-          </Popover> */}
         </Box>
       </Flex>
       <Modal isOpen={isOpenModal3} onClose={onCloseModal3}>

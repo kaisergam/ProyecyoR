@@ -34,7 +34,7 @@ const Footer = () => {
   const [selectedItemId, setSelectedItemId] = useState<number | null>(null);
   const [isMobileView, setIsMobileView] = useState(false);
   const number = {
-    number: 'https://wa.me/5491136347996',
+    number: 'https://wa.me/5491136347997',
   };
   const phoneNumbers = [
     {
